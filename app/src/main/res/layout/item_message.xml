@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/item_message_opposite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.itfitness.simplechat.widget.AvatarView
+            android:id="@+id/item_message_av_opposite"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_message_tv_opposite"
+                tools:text="我是消息"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:textColor="@color/colorMsg"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_message_opposite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_message_mine"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_message_tv_mine"
+                tools:text="我是消息"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                android:textColor="@color/colorMsg"
+                android:background="@drawable/shape_message_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <com.itfitness.simplechat.widget.AvatarView
+            android:id="@+id/item_message_av_mine"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</RelativeLayout>
